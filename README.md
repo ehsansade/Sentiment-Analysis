@@ -1,4 +1,3 @@
-# Sentiment-Analysis
 
 Opinion Minging and Sentiment Analysis 
 ==================
