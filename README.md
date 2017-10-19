@@ -1,31 +1,21 @@
 # Sentiment-Analysis
 
-Sentiment Analysis 
+Opinion Minging and Sentiment Analysis 
 ==================
 
-This project consisted of three parts. The first part is the sentiment analysis of electronic products from www.TechCrunch.com and www.CNET.com. The second part is focused on analyzing sentiment of amazon reviews for "George Foreman GRP99" product. Finally, the last part is on analyzing Macys reviews posted for "George Foreman GRP99" product.
+The goal of this project was to find out about early market reaction to iphone X which has been announced on Spetember 12, 2017. This was achieved by mining and analyzing people opinions on a relevent website (https://techcrunch.com/2017/09/13/i-dont-want-the-new-iphone-x-and-i-cant-be-alone/).
 
-## Part I: Analyzing TechCrunch and CNET Reviews
 ## Input
  
-Users' online reviews from two technological websites: www.techcrunch.com and www.cnet.com for iPhone 5 which was 
-release in Sep. 2012.
+Users' online reviews and comments from www.techcrunch.com for iPhone X which will be released in November 2017.
 
 ## Output
 
-People opinions sentiments for new iPhone 5
+People opinions sentiments for new iPhone X
 
 ## Dependencies
 
-For running this code you need to have Python 2.7 and install PycURL & BeautifulSoup packages on your machine. Check link below for more details:
-	
-	www.crummy.com/software/BeautifulSoup/
-	pycurl.sourceforge.net/
-
-
-## Technical Description
-
-The goal of this project was to mine/analyze people opinions about the new iPhone 5 which has been released on Spetember 12, 2012 (www.cnet.com/iphone-5/) by mining relevent websites.
+For running this code you need to have Python 3.6 and install sklearn, lxml, requests, and pandas packages on your machine. 
 
 ## The code consists of two steps
 
@@ -43,36 +33,12 @@ For techcrunch.com, we collected 79 comments in total where 10 of them were labe
 negative respect to the topic (iPhone 5). Below is the details:
 
 	pos=16.4%
-	neutral=12.6%
 	neg=71%
 
-For cnet.com, we collected 37 comments in total where 5 of them were labeled neutral, 7 positive, and 25 of them were labelled negative. 
-Below is the details:
-
-	pos=19%
-	neutral=13.5
-	neg=67%
-
-Even if our dataset is limited, our results are relatively consistent across both websites. The average results considering the data from 
-both websites are:
-
-	pos=17.7%
-	neutral=13.05%
-	neg=69%
 
 ## Observations
 
-Above results show how people thought about the new iPhone release after its demo on September 12, 2012 and it does not reflect 
+Above results show how people thought about the iPhone X release after its demo on September 12, 2017 and it does not reflect 
 the developer's opinion.
-
-## Part II: Analyzing Amazon Reviews:
-In Nov 2014, I was contacted by Eliza Suzuki when we worked on the problem of extracting reviews for Amazon product and compute their sentiments. Eliza's goal was to see if there is any difference between Amazon stars and real people reviews. We focused on reviews about "George Foreman GRP99" product. For sentiment computation we used vaderSentiment library (https://pypi.python.org/pypi/vaderSentiment/0.5). 
-
-For more technical details please visit the article we published here: www.aioptify.com/crawling.php.
-
-## Part III: Analyzing Macys Reviews:
-In Nov 2014, we also got interested in extracting Macys reviews for "George Foreman GRP99" product. The challenge with Macys website was that we couldn't use "urllib" module anymore due to content nature of the Macys website. So, we ended up using PhantomJS for crawling the website (http://phantomjs.org/). 
-
-For more technical details please visit the article we published here: www.aioptify.com/crawling.php.
  
-If you have any question regard to this project, please drop me a note @ "k DOT jahanbakhsh AT gmail DOT com".
+If you have any question regard to this project, please contact me @ "ehsan DOT sadeghi AT gmail DOT com".
