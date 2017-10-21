@@ -20,19 +20,21 @@ For running this code you need to have Python 3.6 and install sklearn, lxml, req
 
 A- Crawling online comments from web, cleaning up data and extracting important information from html content:
 
-We developed a Python web crawler to pull out people's comments from techcrunch.com and cnet.com websites where they discussed th new released iPhone. This crawler downloads all reviews posted by people. Next, we used BeautifulSoup Python library to extract important data from HTML contents: www.crummy.com/software/BeautifulSoup/.
+I developed a Python web crawler to pull out people's comments from techcrunch.com websites where they discussed the new iPhone. This crawler downloads all reviews and comments posted by people. I used lxml and requests Python libraries to extract important data from HTML contents.
 
-B- Running sentiment analysis using PycURL and text-processing API:
+B- Running sentiment analysis using my developed sentiment analysis model:
 
-For the second step, we used a machine learning algortihm for sentiment analysis to find out what people think about the iPhone 5. We found an available API for the sentiment analysis implemented by Python NLTK (text-processing.com/demo/sentiment/). Thus, we used this website API in order to analyze the polarities of posted comments. For sending HTTP requests to text-processing website, we used a Python library called PycURL. PycURL is a Python interface to libcurl (www.pycurl.sourceforge.net/).
+For the second step, I used Amazon user reviewes for a verity of unlocked mobile phones. Using ratings and text of reviews, I developed a logistic regression model to distinguish postitive and negative reviews. I used "CountVectorizer" from sklearn.feature_extraction.text
+library to find probabilty of 1-word and 2-words combinations in postitive and negative reviews.
+After verifying accuracy model which is around 96% and finding 10 most commen words in postive and negative reviews, I applied the developed model ot the extract comment list. 
 
 ## Results
 
-For techcrunch.com, we collected 79 comments in total where 10 of them were labeled neutral, 13 positive, and 56 of them were labelled 
-negative respect to the topic (iPhone 5). Below is the details:
+I collected 128 comments( including replies to comments) in total where 78 positive, and 50 of them were labelled 
+negative respect to the topic (iPhone X). Below is the details:
 
-	pos=16.4%
-	neg=71%
+	pos=60.9%
+	neg=39.1%
 
 
 ## Observations
