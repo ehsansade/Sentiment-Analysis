@@ -26,7 +26,7 @@ B- Running sentiment analysis using my developed sentiment analysis model:
 
 For the second step, I used Amazon user reviewes for a verity of unlocked mobile phones. Using ratings and text of reviews, I developed a logistic regression model to distinguish postitive and negative reviews. I used "CountVectorizer" from sklearn.feature_extraction.text
 library to find probabilty of 1-word and 2-words combinations in postitive and negative reviews.
-After verifying accuracy model which is around 96% and finding 10 most commen words in postive and negative reviews, I applied the developed model ot the extract comment list. 
+After verifying accuracy of the model which is around 97% and finding 10 most commen words in postive and negative reviews, I applied the developed model to the extract comment list. 
 
 ## Results
 
