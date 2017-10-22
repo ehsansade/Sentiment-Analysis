@@ -1,5 +1,5 @@
 
-Opinion Minging and Sentiment Analysis 
+Opinion Mining and Sentiment Analysis 
 ==================
 
 The goal of this project was to find out about early market reaction to iphone X which has been announced on Spetember 12, 2017. This was achieved by mining and analyzing people opinions on a relevent website (https://techcrunch.com/2017/09/13/i-dont-want-the-new-iphone-x-and-i-cant-be-alone/).
